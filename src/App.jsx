@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
 
 import Home from "./pages/Home";
 import Pakketten from "./pages/Pakketten";
@@ -7,36 +7,61 @@ import Reviews from "./pages/Reviews";
 import Examen from "./pages/Examen";
 import Lesauto from "./pages/Lesauto";
 import Contact from "./pages/Contact";
-
-import "./App.css";
+import Footer from "./pages/Footer";
 
 function App() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <Router>
+    <>
       <nav className="navbar">
-        <h1>Rijschool One-Minute</h1>
+        <div className="logo">One-Minute</div>
 
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/pakketten">Pakketten</Link>
-          <Link to="/prijzen">Prijzen</Link>
-          <Link to="/reviews">Reviews</Link>
-          <Link to="/examen">Examen</Link>
-          <Link to="/lesauto">Lesauto</Link>
-          <Link to="/contact">Contact</Link>
+          <button onClick={() => scrollToSection("home")}>Home</button>
+          <button onClick={() => scrollToSection("pakketten")}>Pakketten</button>
+          <button onClick={() => scrollToSection("prijzen")}>Prijzen</button>
+          <button onClick={() => scrollToSection("reviews")}>Reviews</button>
+          <button onClick={() => scrollToSection("examen")}>Examen</button>
+          <button onClick={() => scrollToSection("lesauto")}>Lesauto</button>
+          <button onClick={() => scrollToSection("contact")}>Contact</button>
         </div>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pakketten" element={<Pakketten />} />
-        <Route path="/prijzen" element={<Prijzen />} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/examen" element={<Examen />} />
-        <Route path="/lesauto" element={<Lesauto />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+      <section id="home">
+        <Home />
+      </section>
+
+      <section id="pakketten">
+        <Pakketten />
+      </section>
+
+      <section id="prijzen">
+        <Prijzen />
+      </section>
+
+      <section id="reviews">
+        <Reviews />
+      </section>
+
+      <section id="examen">
+        <Examen />
+      </section>
+
+      <section id="lesauto">
+        <Lesauto />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <Footer />
+    </>
   );
 }
 

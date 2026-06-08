@@ -1,19 +1,38 @@
+import { useState } from "react";
+
 function Lesauto() {
+  const images = [
+    "public/golf7voor.jpg",
+    "public/golf7schuinvoor.jpg",
+    "public/golf7achter.jpg",
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((current + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((current - 1 + images.length) % images.length);
+  };
+
   return (
-    <div className="page">
-      <h1>Onze Lesauto</h1>
+    <div className="section">
+      <h2 className="section-title">Onze Lesauto</h2>
 
-      <p>Wij rijden in een Volkswagen Golf 8.</p>
-
-      <p>
-        De auto is modern, veilig en comfortabel zodat jij optimaal kunt leren rijden.
+      <p className="car-text">
+        Wij rijden in een moderne Volkswagen Golf die voorzien is van
+        alle moderne veiligheidssystemen.
       </p>
 
-      <img
-        className="car-image"
-        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
-        alt="Lesauto"
-      />
+      <div className="slider">
+        <button onClick={prevSlide}>❮</button>
+
+        <img src={images[current]} alt="Lesauto" />
+
+        <button onClick={nextSlide}>❯</button>
+      </div>
     </div>
   );
 }

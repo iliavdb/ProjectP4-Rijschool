@@ -1,28 +1,24 @@
 function Prijzen() {
   return (
-    <div className="page">
-      <h1>Prijzen</h1>
+    <div className="section">
+      <h2 className="section-title">Prijzen</h2>
 
-      <div className="card-container">
+      <div className="cards">
         <div className="card">
-          <h2>Losse Rijles</h2>
-          <h3>€60 per les</h3>
+          <h3>Losse Rijles</h3>
+          <h1>€60</h1>
         </div>
 
         <div className="card">
-          <h2>Praktijkexamen</h2>
-          <h3>€300</h3>
+          <h3>Praktijkexamen</h3>
+          <h1>€300</h1>
         </div>
 
         <div className="card">
-          <h2>Tussentijdse Toets</h2>
-          <h3>€250</h3>
+          <h3>Tussentijdse Toets</h3>
+          <h1>€250</h1>
         </div>
       </div>
-
-      <h2>Extra kosten</h2>
-      <p>Herexamen: €250</p>
-      <p>BNOR examen: €350</p>
     </div>
   );
 }

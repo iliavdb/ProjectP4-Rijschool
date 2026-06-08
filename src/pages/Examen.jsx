@@ -1,27 +1,30 @@
 function Examen() {
   return (
-    <div className="page">
-      <h1>Praktijkexamen & Tussentijdse Toets</h1>
+    <div className="section dark-section">
+      <h2 className="section-title white">
+        Praktijkexamen & Tussentijdse Toets
+      </h2>
 
-      <h2>Praktijkexamen</h2>
-      <p>
-        Tijdens het praktijkexamen laat je zien dat je veilig zelfstandig kunt rijden.
-      </p>
+      <div className="exam-grid">
+        <div className="card">
+          <h3>Praktijkexamen</h3>
+          <p>
+            Laat zien dat je veilig zelfstandig kunt rijden.
+          </p>
+        </div>
 
-      <h2>Tussentijdse Toets</h2>
-      <p>
-        De tussentijdse toets is een oefenexamen bij het CBR.
-      </p>
+        <div className="card">
+          <h3>Tussentijdse Toets</h3>
+          <p>
+            Een perfect oefenmoment voordat je praktijkexamen start.
+          </p>
+        </div>
 
-      <h2>Minimale leeftijd</h2>
-      <p>Je mag praktijkexamen doen vanaf 17 jaar.</p>
-
-      <h2>Benodigde documenten</h2>
-      <ul>
-        <li>Geldig legitimatiebewijs</li>
-        <li>Theoriecertificaat</li>
-        <li>Uitnodiging van het CBR</li>
-      </ul>
+        <div className="card">
+          <h3>Minimale Leeftijd</h3>
+          <p>Vanaf 17 jaar mag je praktijkexamen doen.</p>
+        </div>
+      </div>
     </div>
   );
 }
