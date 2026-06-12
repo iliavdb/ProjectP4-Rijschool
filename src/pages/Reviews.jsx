@@ -113,7 +113,7 @@ function Reviews() {
       {!showAll && (
         <div className="reviews-button-wrapper">
           <button
-            className="show-reviews-btn"
+            className="primary-button show-reviews-btn"
             onClick={() => setShowAll(true)}
           >
             Zie alle reviews

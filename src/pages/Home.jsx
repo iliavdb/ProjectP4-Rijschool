@@ -10,7 +10,12 @@ function Home() {
             flexibele lestijden en een hoog slagingspercentage.
           </p>
 
-          <button>Plan Gratis Proefles</button>
+          <button
+            className="primary-button"
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Plan Gratis Proefles
+          </button>
         </div>
       </div>
 
