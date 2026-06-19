@@ -1,4 +1,5 @@
 import "./App.css";
+import logo from "./assets/logorijles.png";
 
 import Home from "./pages/Home";
 import Pakketten from "./pages/Pakketten";
@@ -19,7 +20,9 @@ function App() {
   return (
     <>
       <nav className="navbar">
-        <div className="logo">One-Minute</div>
+        <div className="logo">
+          <img src={logo} alt="One-Minute logo" />
+        </div>
 
         <div className="nav-links">
           <button onClick={() => scrollToSection("home")}>Home</button>

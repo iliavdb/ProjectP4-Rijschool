@@ -24,9 +24,14 @@ body {
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #4da6ff;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  max-height: 50px;
+  width: auto;
 }
 
 .nav-links {
