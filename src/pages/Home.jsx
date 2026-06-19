@@ -15,7 +15,7 @@ function Home() {
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
             Plan Gratis Proefles
-          </button>
+            </button>
         </div>
       </div>
 
