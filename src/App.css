@@ -111,6 +111,15 @@ body {
   text-align: center;
 }
 
+.car-text {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+  text-align: center;
+}
+
 .cards {
   display: flex;
   gap: 30px;

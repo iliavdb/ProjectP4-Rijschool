@@ -80,7 +80,10 @@ function Pakketten() {
               </span>
             )}
 
-            <button className="pakket-btn">
+            <button
+              className="pakket-btn"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            >
               Kies pakket
             </button>
           </div>

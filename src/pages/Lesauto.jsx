@@ -22,8 +22,8 @@ function Lesauto() {
       <h2 className="section-title">Onze Lesauto</h2>
 
       <p className="car-text">
-        Wij rijden in een moderne Volkswagen Golf die voorzien is van
-        alle moderne veiligheidssystemen.
+        We rijden in een moderne Volkswagen Golf, uitgerust met alle
+        actuele veiligheidssystemen voor een veilige en comfortabele rijles.
       </p>
 
       <div className="slider">
